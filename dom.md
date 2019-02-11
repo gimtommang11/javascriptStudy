@@ -28,6 +28,31 @@
 
 ## dom조작
 - ### 순회
+    * parentNode
+    * element.parentNode
+    * 부모 노드 탐색
+
+    * firstChild,lastChild
+    * element.firstChild(/lastChild)
+    * 자식 노드 탐색
+
+    * hasChildNodes
+    * element.hasChildNodes
+    * 자식노드 유뮤 boolean값으로 반환
+    * childNodes
+    * element.childNodes
+    * 자식노드 컬랙션 반환
+    * NodeList반환
+
+    * children
+    * 자식 노드 컬랙션 반환
+    * HTMLCollection 반환
+
+    * previousSibling,nextSibling
+    * element.firstchild.previousSibling
+    * 형제 노드 탐색
+    * HTMLElement 상속받은 객체 반환
+* ex) for(let a = 0; i < element.childrenNodes.length;i++){console.log(element.childNode[i])}
 
 - ### 추가
     - innerHTML/innerTEXT 프로퍼티 사용
@@ -62,3 +87,7 @@
 - 동적으로 css를 변경
     - 엘리먼트.style.변경할 속성(프로퍼티)
         - ex)element.style.color = '#fff';
+
+### 그 외
+- 'addEventListener is not a function'
+- '~~ is null'
